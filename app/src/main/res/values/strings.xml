@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Nuntium</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_page_title">First to know</string>
+    <string name="onboarding_page_desc">All news in one place, be the first to know last news</string>
+    <string name="onboarding_page_btn">Next</string>
+    <string name="onboarding_page2_title">Nuntium</string>
+    <string name="onboarding_page2_desc">All news in one place, be the first to know last news</string>
+    <string name="onboarding_page2_btn">Get Started</string>
+
+
+    <!-- Strings -->
+    <string name="sign_in_page_title">Welcome Back 👋</string>
+    <string name="sign_in_page_subheading">
+        I am happy to see you again. You can continue where you left off by logging in
+    </string>
+    <string name="or">or</string>
+    <string name="forgot_password_page_title">Forgot Password 🤔</string>
+    <string name="forgot_password_subheading">
+        We need your email address so we can send you the password reset code.
+    </string>
+    <string name="verification_code_page_title">Verification Code ✅</string>
+    <string name="verification_code_page_subheading">
+        You need to enter 4-digit code we send to your email address.
+    </string>
+    <string name="create_new_pass_page_title">Create New Password 🔒</string>
+    <string name="create_new_pass_page_subheading">
+        You can create a new password, please don\'t forget it too.
+    </string>
+    <string name="sign_up_page_title">Welcome to Nuntium 👋</string>
+    <string name="sign_up_page_subheading">
+        Hello, I guess you are new around here. You can start using the application after sign up.
+    </string>
+    <string name="favorite_topics_page_title">Select your favorite topics</string>
+    <string name="favorite_topics_page_subheading">
+        Select some of your favorite topics to let us suggest better news for you.
+    </string>
+    <string name="homepage_title">Browse</string>
+    <string name="homepage_subheading">Discover things of this world</string>
+    <string name="categories_page_title">Categories</string>
+    <string name="categories_subheading">Thousands of articles in each category</string>
+    <string name="bookmarks_page_title">Bookmarks</string>
+    <string name="bookmarks_subheading">Saved articles to the library</string>
+    <string name="bookmarks_empty">
+        You haven\'t saved any articles yet. Start reading and bookmarking them now
+    </string>
+    <string name="profile_page_title">Profile</string>
+    <string name="change_password_page_title">Change Password</string>
+    <string name="privacy_page_title">Privacy</string>
+    <string name="terms_conditions_page_title">Terms &amp; Conditions</string>
+    <string name="language_page_title">Language</string>
+
+
+    <!-- Action strings  -->
+    <string name="action_forgot_password">Forgot password?</string>
+    <string name="prompt_no_account">Don\'t have an account?</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="prompt_already_have_account">Already have an account?</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="prompt_remember_password">Remember the password?</string>
+    <string name="action_try_again">Try again</string>
+    <string name="prompt_didnt_receive_email">Didn’t receive an email?</string>
+    <string name="action_send_again">Send again</string>
+
+
+    <!-- TextInputEditText placeholders -->
+    <string name="placeholder_username">Username</string>
+    <string name="placeholder_email_address">Email Address</string>
+    <string name="placeholder_password">Password</string>
+    <string name="hint_repeat_password">Repeat Password</string>
+    <string name="hint_current_password">Current Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_repeat_new_password">Repeat New Password</string>
+    <string name="hint_search">Search</string>
+
+
+    <!-- Buttons -->
+    <string name="button_sign_in">Sign In</string>
+    <string name="button_sign_up">Sign Up</string>
+    <string name="button_sign_out">Sign Out</string>
+    <string name="button_sign_in_with_google">Sign In with Google</string>
+    <string name="button_sign_in_with_facebook">Sign In with Facebook</string>
+    <string name="button_next">Next</string>
+    <string name="button_get_started">Get Started</string>
+    <string name="button_confirm">Confirm</string>
+    <string name="button_notifications">Notifications</string>
+    <string name="button_language">Language</string>
+    <string name="button_change_password">Change Password</string>
+    <string name="button_privacy">Privacy</string>
+    <string name="button_terms_conditions">Terms &amp; Conditions</string>
+    <string name="button_lang_en">English</string>
+    <string name="button_lang_ru">Russian</string>
+    <string name="button_lang_ge">German</string>
+
+
+    <!-- Errors -->
+    <string name="error_message_field_empty">Fill in the field</string>
+    <string name="error_message_username_invalid">Username is invalid</string>
+    <string name="error_message_email_invalid">Email is invalid</string>
+    <string name="error_message_password_invalid">Password is invalid</string>
+    <string name="error_message_repeat_password_mismatch">Repeat password does not match</string>
+
+    <string-array name="article_categories">
+        <item>👨‍💻 Programming</item>
+        <item>🏀 Sports</item>
+        <item>⚖️ Politics</item>
+        <item>🦾 AI</item>
+        <item>🎮 Gaming</item>
+        <item>🦊 Animals</item>
+        <item>🔑 Crypto</item>
+        <item>🎨 Art</item>
+        <item>🍔 Food</item>
+        <item>⚔️ History</item>
+    </string-array>
+
+    <string name="all">All</string>
+
+    <string name="article_category">%s %s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

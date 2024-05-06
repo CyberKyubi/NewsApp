@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Text sizes  -->
+    <dimen name="text_size_header">24sp</dimen>
+    <dimen name="text_size_primary">16sp</dimen>
+
+    <dimen name="text_size_article_title">20sp</dimen>
+    <dimen name="text_size_publisher_role">14sp</dimen>
+    <dimen name="text_size_category">12sp</dimen>
+
+
+    <!--  Layout margins -->
+    <dimen name="layout_margin_horizontal_standard">20dp</dimen>
+    <dimen name="layout_margin_vertical_standard">16dp</dimen>
+    <dimen name="layout_margin_top_header">28dp</dimen>
+    <dimen name="layout_margin_top_from_subheading">32dp</dimen>
+    <dimen name="layout_margin_top_extended">24dp</dimen>
+    <dimen name="layout_margin_top_onboarding_title">80dp</dimen>
+    <dimen name="layout_margin_start_extended">24dp</dimen>
+
+    <dimen name="layout_margin_top_sign_in_or">48dp</dimen>
+    <dimen name="layout_margin_top_action_auth">50dp</dimen>
+    <dimen name="layout_margin_bottom_action_auth">8dp</dimen>
+    <dimen name="layout_margin_start_action_auth">8dp</dimen>
+
+    <dimen name="layout_width_verify_code">72dp</dimen>
+    <dimen name="layout_height_verify_code">72dp</dimen>
+
+
+
+</resources>

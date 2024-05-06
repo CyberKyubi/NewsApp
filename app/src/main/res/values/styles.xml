@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/colorPurplePrimary</item>
+        <item name="colorPrimaryContainer">@color/colorPurpleLight</item>
+        <item name="colorOnPrimary">@color/colorPurpleLighter</item>
+        <item name="colorOnPrimaryContainer">@color/colorPurpleDark</item>
+
+        <!-- Secondary color -->
+        <item name="colorSecondary">@color/colorBlackPrimary</item>
+        <item name="colorSecondaryContainer">@color/colorBlackLight</item>
+        <item name="colorOnSecondary">@color/colorBlackLighter</item>
+        <item name="colorOnSecondaryContainer">@color/colorBlackDark</item>
+
+        <!-- Tertiary color -->
+        <item name="colorTertiary">@color/colorGrayPrimary</item>
+        <item name="colorTertiaryContainer">@color/colorGrayLight</item>
+        <item name="colorOnTertiary">@color/colorGrayLighter</item>
+        <item name="colorOnTertiaryContainer">@color/colorGrayDark</item>
+    </style>
+
+    <style name="Theme.Nuntium" parent="AppTheme">
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.Nuntium.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/colorPurplePrimary</item>
+        <item name="postSplashScreenTheme">@style/Theme.Nuntium</item>
+    </style>
+
+
+    <style name="FragmentTitle">
+        <item name="android:fontFamily">@font/sf_pro_text_bold</item>
+        <item name="android:textSize">@dimen/text_size_header</item>
+        <item name="android:textColor">@color/colorBlackPrimary</item>
+    </style>
+
+    <style name="FragmentSubheading">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/colorGrayPrimary</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@drawable/background_active_button</item>
+    </style>
+
+    <style name="SearchTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/sf_pro_text_medium</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+    </style>
+
+
+</resources>

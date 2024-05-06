@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_nav_graph"
+    app:startDestination="@id/profileNavFragment">
+
+    <fragment
+        android:id="@+id/profileNavFragment"
+        android:name="com.cyberkyubi.nuntium.presentation.home.profile.profilepage.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_languageFragment"
+            app:destination="@id/languageFragment"
+            app:popUpTo="@id/profileNavFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_profileFragment2_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment"
+            app:popUpTo="@id/profileNavFragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_privacyFragment"
+            app:destination="@id/privacyFragment"
+            app:popUpTo="@id/profileNavFragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_termsAndConditionsFragment"
+            app:destination="@id/termsAndConditionsFragment"
+            app:popUpTo="@id/profileNavFragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_signOutFragment"
+            app:destination="@id/signOutFragment"
+            app:popUpTo="@id/profileNavFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.cyberkyubi.nuntium.presentation.home.profile.language.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.cyberkyubi.nuntium.presentation.auth.password.change.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.cyberkyubi.nuntium.presentation.home.profile.PrivacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" />
+    <fragment
+        android:id="@+id/termsAndConditionsFragment"
+        android:name="com.cyberkyubi.nuntium.presentation.home.profile.TermsAndConditionsFragment"
+        android:label="fragment_terms_and_conditions"
+        tools:layout="@layout/fragment_terms_and_conditions" />
+    <fragment
+        android:id="@+id/signOutFragment"
+        android:name="com.cyberkyubi.nuntium.presentation.auth.sign.signout.SignOutFragment"
+        android:label="fragment_sign_out"
+        tools:layout="@layout/fragment_sign_out" />
+</navigation>

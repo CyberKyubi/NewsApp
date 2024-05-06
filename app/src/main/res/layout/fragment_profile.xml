@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.home.profile.profilepage.ProfileFragment">
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_horizontal_standard"
+        android:layout_marginTop="@dimen/layout_margin_top_header"
+        android:text="@string/profile_page_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profileInfoConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_horizontal_standard"
+        android:layout_marginTop="@dimen/layout_margin_top_from_subheading"
+        android:layout_marginEnd="@dimen/layout_margin_horizontal_standard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/NameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_margin_start_extended"
+            android:layout_marginTop="@dimen/layout_margin_vertical_standard"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/profileImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_margin_start_extended"
+            android:layout_marginBottom="@dimen/layout_margin_vertical_standard"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profileImageView"
+            app:layout_constraintTop_toBottomOf="@+id/NameTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/notificationsSwitchButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_horizontal_standard"
+        android:layout_marginTop="@dimen/layout_margin_top_from_subheading"
+        android:layout_marginEnd="@dimen/layout_margin_horizontal_standard"
+        android:checked="true"
+        android:padding="16dp"
+        android:fontFamily="@font/sf_pro_text_semibold"
+        android:textColor="@color/colorGrayDark"
+        android:textSize="@dimen/text_size_primary"
+        app:cornerRadius="12dp"
+        android:text="@string/button_notifications"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileInfoConstraintLayout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/languageSettingsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_horizontal_standard"
+        android:layout_marginTop="@dimen/layout_margin_vertical_standard"
+        android:layout_marginEnd="@dimen/layout_margin_horizontal_standard"
+        android:drawableEnd="@drawable/ic_right_arrow_8dp"
+        android:drawableTint="@color/colorGrayDark"
+        android:fontFamily="@font/sf_pro_text_semibold"
+        android:gravity="start"
+        android:padding="16dp"
+        android:text="@string/button_language"
+        android:textColor="@color/colorGrayDark"
+        android:textSize="@dimen/text_size_primary"
+        app:backgroundTint="@color/colorGrayLighter"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notificationsSwitchButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/passwordSettingsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_horizontal_standard"
+        android:layout_marginTop="@dimen/layout_margin_vertical_standard"
+        android:layout_marginEnd="@dimen/layout_margin_horizontal_standard"
+        android:drawableEnd="@drawable/ic_right_arrow_8dp"
+        android:drawableTint="@color/colorGrayDark"
+        android:fontFamily="@font/sf_pro_text_semibold"
+        android:gravity="start"
+        android:padding="16dp"
+        android:text="@string/button_change_password"
+        android:textColor="@color/colorGrayDark"
+        android:textSize="@dimen/text_size_primary"
+        app:backgroundTint="@color/colorGrayLighter"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/languageSettingsButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/privacySettingsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_horizontal_standard"
+        android:layout_marginTop="@dimen/layout_margin_top_from_subheading"
+        android:layout_marginEnd="@dimen/layout_margin_horizontal_standard"
+        android:drawableEnd="@drawable/ic_right_arrow_8dp"
+        android:drawableTint="@color/colorGrayDark"
+        android:fontFamily="@font/sf_pro_text_semibold"
+        android:gravity="start"
+        android:padding="16dp"
+        android:text="@string/button_privacy"
+        android:textColor="@color/colorGrayDark"
+        android:textSize="@dimen/text_size_primary"
+        app:backgroundTint="@color/colorGrayLighter"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordSettingsButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/termsSettingsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_horizontal_standard"
+        android:layout_marginTop="@dimen/layout_margin_vertical_standard"
+        android:layout_marginEnd="@dimen/layout_margin_horizontal_standard"
+        android:drawableEnd="@drawable/ic_right_arrow_8dp"
+        android:drawableTint="@color/colorGrayDark"
+        android:fontFamily="@font/sf_pro_text_semibold"
+        android:gravity="start"
+        android:padding="16dp"
+        android:text="@string/button_terms_conditions"
+        android:textColor="@color/colorGrayDark"
+        android:textSize="@dimen/text_size_primary"
+        app:backgroundTint="@color/colorGrayLighter"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacySettingsButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signOutButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_horizontal_standard"
+        android:layout_marginTop="@dimen/layout_margin_top_from_subheading"
+        android:layout_marginEnd="@dimen/layout_margin_horizontal_standard"
+        android:drawableEnd="@drawable/ic_sign_out_16dp"
+        android:drawableTint="@color/colorGrayDark"
+        android:fontFamily="@font/sf_pro_text_semibold"
+        android:gravity="start"
+        android:padding="16dp"
+        android:text="@string/button_sign_out"
+        android:textColor="@color/colorGrayDark"
+        android:textSize="@dimen/text_size_primary"
+        app:backgroundTint="@color/colorGrayLighter"
+        app:cornerRadius="12dp"
+        app:iconTintMode="screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termsSettingsButton" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
